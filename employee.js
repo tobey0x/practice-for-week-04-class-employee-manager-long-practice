@@ -2,7 +2,9 @@ class Employee {
     constructor(name, salary, title, manager = null) {
         this.name = name;
         this.salary = salary;
-        this.title = title
+        this.title = title;
+        this.manager = manager
+        this.checkManager();
     }
 
     checkManager() {
